@@ -33,12 +33,12 @@
     .right{
         width: 60%;
         height: 100%;
-        background-color: bisque;
+        /* background-color: bisque; */
     }
     .rtop{
         width: 100%;
         height :50%;
-        background-color: azure;
+        /* background-color: azure; */
         display: flex;
     }
     .rbottom{
@@ -114,12 +114,17 @@
         text-decoration: none;
         color: black;
         border-bottom: 2px solid black;
-        padding-bottom: 5px;
+        padding: 5px;
         opacity: .6;
-
-        
     }
-    @media(max-width:500px) {
+    .textcenter a:hover{
+        color: white;
+        background-color: black;
+        opacity: 1;
+        border-radius: 2px;
+
+    }
+    @media(max-width:900px) {
         .main{
             flex-direction: column;
         }
@@ -148,7 +153,7 @@
                 <h1>Hello,</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed quam corrupti quibusdam perspiciatis corporis sint nulla tempore, obcaecati unde facere magnam ut provident illo molestias, incidunt ipsum cupiditate reiciendis reprehenderit atque! Tempora, officiis eum.</p>
 
-                <a href="#">Read</a>
+                <a class="readbtn" href="#">Read</a>
             </div>
             
         </div>
@@ -162,5 +167,9 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js" integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js">
+        
+    </script>
 </body>
 </html>
